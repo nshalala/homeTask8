@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.5s;
+}
+.sec1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+#container {
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 8px 15px;
+}
+#container input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+#container.show{
+    background-color: white;
+}
+#container.show input, 
+#container.show label{
+    background-color: white;
+    color: black;
+}
+#container.hide{
+    background-color: black;
+}
+#container.hide input, 
+#container.hide label{
+    background-color: black;
+    color: white;
+}
+#strength {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    width: 55px;
+}
+#strength.invalid{
+    color: red;
+}
+#strength.valid{
+    color: green;
+}
